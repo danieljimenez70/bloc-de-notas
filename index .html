@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="estilo" rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Faster+One&family=Gochi+Hand&family=Klee+One&family=Leckerli+One&family=Monoton&family=Noto+Sans+Ugaritic&family=Press+Start+2P&family=Sixtyfour+Convergence&family=Titan+One&family=Ultra&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <h1>BLOC DE NOTAS </h1>
+        <div>
+            <label for="TEMA">TEMA:</label>
+            <select id="tema-selector" onchange="cambiarTema()" required>
+                <option value="claro">🌞 claro</option>
+                <option value="oscuro">🌚 oscuro</option>
+                <option value="azul">🌊 azul</option>
+                <option value="rosa">🌸 rosa</option>
+                <option value="verde">☘️ verde</option>
+            </select>
+        </div>
+    </header>
+    <div class="cuerpo">
+    <textarea name="textarea" id="textarea" placeholder="Escribe tu nota aquí..."></textarea><br>
+
+    <button id="btn">Añadir nota</button><br>
+   
+
+    
+</div>
+<h2>Notas</h2>
+<div class='mostrar'id="notas2">
+
+</div>
+<div>
+    <button class="ocultar" id="btn2">Eliminar Todas las notas</button><br>
+
+</div>
+   <script src="javascript.js"></script>
+</body>
+
+</html>
+<!-- //let tema = document.getElementById("tema-selector").value;
+ --><!-- 
+document.getElementById("tema-selector"): Esta parte del código selecciona el elemento HTML con el id "tema-selector". En este caso, es el <select> que contiene las opciones de tema.
+
+.value: Este método obtiene el valor actualmente seleccionado del elemento <select>. Por ejemplo, si el usuario selecciona "claro" de la lista, el valor será "claro".
+
+let tema = ...: Asigna el valor seleccionado a la variable tema. Esto nos permite saber qué tema ha escogido el usuario para usarlo más adelante en el código.
+
+let estilo = document.getElementById("estilo");
+
+document.getElementById("estilo"): Esta parte del código selecciona el elemento HTML con el id "estilo". En este caso, es el <link> que apunta a la hoja de estilo actual de la página.
+
+let estilo = ...: Asigna el elemento <link> a la variable estilo. Esto permite modificar el atributo href de este <link> para cambiar la hoja de estilo según la selección del usuario. -->
